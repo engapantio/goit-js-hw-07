@@ -1,0 +1,52 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+}
+
+.task1 {
+  border-radius: 8px;
+  padding: 24px;
+  width: 440px;
+  height: 888px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+#categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+#categories li {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  background: #f6f6fe;
+}
+
+#categories h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+#categories li ul {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+#categories li li {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}

@@ -1,0 +1,10 @@
+@import url("./reset.css");
+@import url("./container.css");
+@import url("./common.css");
+
+/* Sections style */
+@import url("./task-1.css");
+@import url("./task-2.css");
+@import url("./task-3.css");
+@import url("./task-4.css");
+@import url("./task-5.css");
