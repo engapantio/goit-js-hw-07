@@ -16,6 +16,9 @@
 Після сабміту елементи форми очищаються   */
 
 const loginForm = document.querySelector(".login-form");
+Array.from(loginForm.elements).forEach(
+  (element) => (element.placeholder = "Type area")
+);
 
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
