@@ -9,23 +9,15 @@
 Кількість категорій, їх назва та кількість елементів отримані за допомогою властивостей і методів DOM-елементів
 Дані за кожною категорією були отримані й виведені в консоль у тілі циклу або методу forEach()*/
 
-const listOfCategories = document.querySelectorAll("li.item");
+const listOfCategories = document.querySelectorAll('li.item');
 
-console.log(
-  `Number of categories: ${Array.from(listOfCategories).reduce(
-    (acc) => acc + 1,
-    0
-  )}`
-);
+console.log(`Number of categories: ${listOfCategories.length}`);
 
-Array.from(listOfCategories).forEach((category) => {
+Array.from(listOfCategories).forEach(category => {
   console.log(
-    `Category: ${category.innerText.slice(0, category.innerText.indexOf("\n"))}`
+    `Category: ${category.innerText.slice(0, category.innerText.indexOf('\n'))}`
   );
   console.log(
-    `Elements: ${Array.from(category.querySelectorAll("li")).reduce(
-      (acc) => acc + 1,
-      0
-    )}`
+    `Elements: ${Array.from(category.querySelectorAll('li')).length}`
   );
 });
