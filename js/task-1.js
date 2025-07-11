@@ -18,6 +18,6 @@ Array.from(listOfCategories).forEach(category => {
     `Category: ${category.firstElementChild.textContent}`
   );
   console.log(
-    `Elements: ${category.querySelectorAll('li li').length}`
+    `Elements: ${category.querySelectorAll('ul li').length}`
   );
 });
