@@ -15,9 +15,9 @@ console.log(`Number of categories: ${listOfCategories.length}`);
 
 Array.from(listOfCategories).forEach(category => {
   console.log(
-    `Category: ${category.innerText.slice(0, category.innerText.indexOf('\n'))}`
+    `Category: ${category.firstElementChild.textContent}`
   );
   console.log(
-    `Elements: ${Array.from(category.querySelectorAll('li')).length}`
+    `Elements: ${category.querySelectorAll('li li').length}`
   );
 });
